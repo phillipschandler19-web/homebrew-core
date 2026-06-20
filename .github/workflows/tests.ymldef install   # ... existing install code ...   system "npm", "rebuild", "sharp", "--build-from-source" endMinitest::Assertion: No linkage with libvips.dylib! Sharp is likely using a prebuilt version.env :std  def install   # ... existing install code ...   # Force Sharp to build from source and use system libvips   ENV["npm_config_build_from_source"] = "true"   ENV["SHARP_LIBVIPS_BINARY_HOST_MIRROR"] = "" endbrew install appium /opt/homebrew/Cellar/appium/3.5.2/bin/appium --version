@@ -455,7 +455,7 @@ jobs:
              [[ "$syntax_only" = "false" ]]
           then
             exit 0
-          fi
+          fiotool -L /opt/homebrew/Cellar/appium/3.5.2/node_modules/sharp/build/Release/sharp-darwin-arm64.node | grep libvips
 
           # If we made it here, something went wrong with our workflow run that needs investigating.
           printf '::error ::Unexpected outcome!\n'
